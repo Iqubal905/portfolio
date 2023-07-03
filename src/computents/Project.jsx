@@ -24,7 +24,7 @@ const Project = () => {
 		<img src={img1} alt="" />
        <div className='project-button'>
         <div className="wrapper">
-              <a href="#"><span>Preview</span></a>
+              <a href="https://summer-camp-auth.web.app/#slide1"><span>Preview</span></a>
            </div>
      </div>			
 		</div>
@@ -40,7 +40,7 @@ const Project = () => {
 		<img src={img2} alt="" />
        <div className='project-button'>
         <div className="wrapper">
-              <a href="#"><span>Preview</span></a>
+              <a href="https://curd-assignment-2eb5d.web.app/"><span>Preview</span></a>
            </div>
      </div>			
 		</div>
@@ -56,7 +56,7 @@ const Project = () => {
 		<img src={img3} alt="" />
        <div className='project-button'>
         <div className="wrapper">
-              <a href="#"><span>Preview</span></a>
+              <a href="https://recipes-assignment-auth.web.app/home"><span>Preview</span></a>
            </div>
      </div>			
 		</div>
