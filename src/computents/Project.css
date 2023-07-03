@@ -1,0 +1,115 @@
+.container {
+    padding: 80px 0;
+  }
+  .content {
+    position: relative;
+  }
+
+  .screen {
+      display: block;
+      width: 300px;
+      height: 300px;
+      overflow: hidden;
+      position: relative;
+      border: 20px solid #444343;
+      border-radius: 8px;
+      margin: 0 auto;
+
+  }
+.hover-bg{
+    background-color: rgb(12, 12, 12);
+    width: 300px;
+    height: 300px;
+    position:absolute;
+    z-index: 2;
+    opacity: .3;
+}
+ .screen .details {
+    display: none;
+    
+ }
+
+  .screen:hover .details {
+    display: block;
+    position: absolute;
+    top: 50px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 5;
+    color: white;
+  }
+  .screen img  {
+      top:0px;
+      width: 100%;
+      height: auto;
+      position: absolute;
+      z-index: 0;
+    margin:0;
+    padding:0;
+      -webkit-transition: top 11s;
+      -moz-transition: top 11s;
+      -ms-transition: top 11s;
+      -o-transition: top 1s;
+      transition: bottom 1s;
+  }
+  .screen:hover img {
+    top: -500px;
+    -webkit-transition: all 11s;
+    -moz-transition: all 11s;
+    -ms-transition: all 11s;
+    -o-transition: all 5s;
+    transition: all 5s;
+  }
+
+ 
+  .wrapper{
+    position: absolute;
+    bottom: 0px;
+    z-index: 500;
+    left: 80px;
+    
+
+  }
+  
+ .screen a{
+    display: block;
+    width: 100px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 18px;
+    font-family: sans-serif;
+    text-decoration: none;
+    font-weight: bold;
+    color: #eeea0d;
+    border: 2px solid rgb(238, 205, 19);
+    letter-spacing: 2px;
+    text-align: center;
+    position: relative;
+    transition: all .35s;
+    border-radius: 2%;
+  }
+  
+ .screen a span{
+    position: relative;
+    z-index: 2;
+  }
+  
+ .screen a:after{
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: #ffe600;
+    transition: all .35s;
+  }
+  
+  .screen a:hover{
+    color: #fff;
+  }
+  
+ .screen a:hover:after{
+    width: 100%;
+  }

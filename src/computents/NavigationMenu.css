@@ -1,0 +1,108 @@
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px 20px;
+    background-color: #000;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    transition: background-color 0.3s ease;
+   opacity: .7;
+  }
+  .navbar .logo {
+
+
+  }
+  
+  .nav-menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+  }
+  
+  .nav-menu li {
+    margin-right: 20px;
+  }
+  
+  .nav-menu li:last-child {
+    margin-right: 0;
+  }
+  
+  .nav-menu li a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+    transition: color 0.3s ease;
+  }
+  
+  .nav-menu li a:hover {
+    color: #ff0000;
+  }
+  
+  .nav-menu li a.active {
+    text-decoration: underline;
+  }
+  
+  .hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+  }
+  
+  .line {
+    width: 30px;
+    height: 4px;
+    background-color: #000000;
+    margin-bottom: 5px;
+    transition: transform 0.3s ease;
+  }
+  
+  .navbar.mobile-open .hamburger .line-open:nth-child(1) {
+    transform: translateY(9px) rotate(45deg);
+  }
+  
+  .navbar.mobile-open .hamburger .line-open:nth-child(2) {
+    opacity: 0;
+  }
+  
+  .navbar.mobile-open .hamburger .line-open:nth-child(3) {
+    transform: translateY(-9px) rotate(-45deg);
+  }
+  .nav-menu li a.active {
+    text-decoration: underline;
+    color: aqua;
+  }
+  
+  
+
+  @media screen and (max-width: 768px) {
+    .nav-menu {
+      position: absolute;
+      top: 100%;
+      left: 0;
+      width: 100%;
+      flex-direction: column;
+      background-color: #ffffff;
+      transition: opacity 0.3s ease, visibility 0s linear 0.3s;
+      opacity: 0;
+      visibility: hidden;
+      padding: 20px;
+      text-align: center;
+    }
+  
+    .navbar.mobile-open .nav-menu {
+      opacity: 1;
+      visibility: visible;
+      transition: opacity 0.3s ease;
+    }
+  
+    .hamburger {
+      display: flex;
+    }
+  }
+  
